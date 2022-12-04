@@ -1,0 +1,158 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+<body>
+    <div class="container">
+      <div class="content">
+      <form action="#">
+        <img src="assets/delivery-icon.png" alt="">
+        <div class="topic">Delivery Details</div>
+        <!-- <div class="date">As of November 20, 2022</div> -->
+        <div class="plate_num">Truck Plate No. Number</div>
+        <hr>
+        <div class="row">
+            <div class="col">
+              <table class="other-details">
+                <div class="title">Other Details</div>
+                <tr class="subinfo">
+                  <th>Assigned Driver:</th>
+                  <td>ASDASDASDADASD</td>
+                </tr>
+    
+                <tr class="subinfo">
+                  <th>Container Van No.:</th>
+                  <td>ASDASDASDADASD</td>
+                </tr>
+    
+                <tr class="subinfo">
+                  <th>Assigned Helper:</th>
+                  <td>ASDASDASDADASD</td>
+                </tr>
+    
+                <tr class="subinfo">
+                  <th>Extra Helper:</th>
+                  <td>ASDASDASDADASD</td>
+                </tr>
+    
+                <tr class="subinfo">
+                  <th>Extra Helper:</th>
+                  <td>ASDASDASDADASD</td>
+                </tr>
+    
+                <tr class="subinfo">
+                  <th>Extra Helper:</th>
+                  <td>ASDASDASDADASD</td>
+                </tr>
+              </table>
+            </div>
+            <div class="col">
+              <table class="consignee-details">
+                <div class="title">Consignee Details</div>
+                <tr class="subinfo">
+                  <th>Name/Company:</th>
+                  <td>Myrna Baatumbaaaakal</td>
+                </tr>
+    
+                <tr class="subinfo">
+                  <th>Conctact number:</th>
+                  <td>12345678901</td>
+                </tr>
+    
+                <tr class="subinfo">
+                  <th>Complete Address:</th>
+                  <td>ASDASDASDADASD</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        <br><hr>
+          <div class="row">
+            <div class="col-below status">
+              <br>
+                <div class="b-title">Track Status</div><br>
+                <div class="box">
+                    <div class="b-container">
+                      <ul class="b">
+                        <li class="b-status" ng-repeat="itembx">
+                          <div class="timestamp">3rd May 2020 <br> 7:00 PM</div>
+                          <div class="status-title-dlvrd">Delivered</div>
+                          <div class="status-info">The Cargo was delivered successfully.</div>
+                        </li>
+
+                        <li class="b-status" ng-repeat="itembx">
+                          <div class="timestamp">19th May 2020 <br> 3:00PM</div>
+                          <div class="status-title">Truck returned</div>
+                          <div class="status-info">Truck successfully returned</div>
+                        </li>
+
+                        <li class="b-status" ng-repeat="itembx">
+                            <div class="timestamp">3rd May 2020 <br> 7:00 PM</div>
+                          <div class="status-title">Return to Garage</div>
+                          <div class="status-info">Truck is about to return the garage</div>
+                        </li>
+                        
+                        <li class="b-status" ng-repeat="itembx">
+                            <div class="timestamp">3rd May 2020 <br> 7:00 PM</div>
+                            <div class="status-title">Cargos Unloaded</div>
+                            <div class="status-info">Cargos successfully unloaded</div>
+                        </li>
+
+                        <li class="b-status" ng-repeat="itembx">
+                            <div class="timestamp">3rd May 2020 <br> 7:00 PM</div>
+                            <div class="status-title">Unloading Cargos</div>
+                            <div class="status-info">Carrier is about to unload the cargo from the truck</div>
+                        </li>
+
+                        <li class="b-status" ng-repeat="itembx">
+                            <div class="timestamp">3rd May 2020 <br> 7:00 PM</div>
+                            <div class="status-title">Arrived at Destination</div>
+                            <div class="status-info">Truck has arrived at the destination</div>
+                        </li>
+
+                        <li class="b-status" ng-repeat="itembx">
+                            <div class="timestamp">3rd May 2020 <br> 7:00 PM</div>
+                            <div class="status-title">Out For Delivery</div>
+                            <div class="status-info">Truck is about to deliver the Cargo</div>
+                        </li>
+
+                        <li class="b-status" ng-repeat="itembx">
+                            <div class="timestamp">3rd May 2020 <br> 7:00 PM</div>
+                            <div class="status-title">Failed Attempt</div>
+                            <div class="status-info">Truck attempted to deliver, but failed.
+                              Usually, we leave a notice and will try to deliver again.
+                            </div>
+                        </li>
+
+                        <li class="b-status" ng-repeat="itembx">
+                            <div class="timestamp">3rd May 2020 <br> 7:00 PM</div>
+                            <div class="status-title">Out For Delivery</div>
+                            <div class="status-info">Truck is about to deliver the Cargo</div>
+                        </li>
+
+                        <li class="b-status" ng-repeat="itembx">
+                            <div class="timestamp">3rd May 2020 <br> 7:00 PM</div>
+                            <div class="status-title">In Transit</div>
+                            <div class="status-info">Truck asssigned and about to pick up the cargo
+                              from the Pier, and return to Garage to get some Extra Helper.
+                            </div>
+                        </li>
+
+                        <li class="b-status" ng-repeat="itembx">
+                            <div class="timestamp">3rd May 2020 <br> 7:00 PM</div>
+                            <div class="status-title">Info Received</div>
+                            <div class="status-info">Carrier has received request from the Shipper, 
+                              and is about to pick up the Cargo.
+                            </div>
+                        </li>
+                      </ul>
+                      <button class="proof-btn">Upload Proof</button><br>
+                    </div>
+                  </div>
+                </div>
+          </div><br>
+          <button class="back-btn">Go back</button>
+    </form>
+  </div>
+  </div>
+  </body>
