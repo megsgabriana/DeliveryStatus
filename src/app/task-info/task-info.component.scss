@@ -1,13 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
 @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 
-*{
+  .task-info-body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins',sans-serif;
-  }
-  .task-body{
     height: 100vh;
     width: 100%;
     display: flex;
@@ -16,7 +14,8 @@
     background: #FAE2D0;
     position: relative;
   }
-  .task-body::before{
+
+  .task-info-body::before {
     content: '';
     position: absolute;
     height: 100%;
@@ -26,7 +25,7 @@
     background: #f9f9ff;
   }
   
-  .container{
+  .task-info-container{
     z-index: 12;
     max-width: 1600px;
     max-height: 1600px;
@@ -39,7 +38,7 @@
     overflow: auto;
   }
   
-  .container .content{
+  .task-info-content{
     //margin-left: 20px;
     display: flex;
     align-items: center;
@@ -47,7 +46,7 @@
     padding: 25px 20px;
   }
 
-  .content {
+  .task-info-content {
     .delivery-details-icon {
       margin-top: 10px;
       display: block;
@@ -55,12 +54,12 @@
       margin-right: auto;
       width: 75px;
   }
-    form {
+  .task-info-form {
         width: 100%;
         //margin-right: 30px;
     }
     
-    .topic{
+    .task-info-topic{
         margin-top: 10px;
         text-align: center;
         font-size: 25px;
@@ -82,14 +81,14 @@
         text-align: center;
     }
     
-    .title {
+    .task-info-title {
         margin-top: 10px;
         font-weight: 600;
         font-size: 20px;
         word-spacing: 2px;
     }
 
-    .b-title {
+    .task-b-title {
       text-align: center;
       margin-top: 10px;
       font-weight: 600;
@@ -98,13 +97,13 @@
     }
 
     /* Other Details & Consignee Details */
-    .col {
+    .task-info-col {
         float: left; 
         width: 50%; 
         margin: auto;
       }
 
-    .row:after {
+    .task-info-row:after {
         content: ""; display: table; clear: both;}
 
     .other-details, .consignee-details {
@@ -112,7 +111,7 @@
       margin-right:auto;
     }
 
-    th {
+    .task-info-th {
       padding: 0 25px 0 0;
       float:left;
       font-size: 15px;
@@ -121,7 +120,7 @@
       list-style: none;
       display: block;
   }
-  td {
+  .task-info-td {
       text-align: center;
       color: gray;
       font-size: 15px;
@@ -129,43 +128,44 @@
       //display: inline-block;
    }
 
-    hr {
+   .task-info-hr {
         border-top: 2px solid #10227A; 
         margin: 10px;
       }
   }
   
-  .proof-btn{
-    margin: auto;
-    margin-bottom: 10px;
-    display: block;
-    font-weight: bold;
-    color: #ffffff;
-    background:#142a93;
-    font-size: 19px;
-    padding: 5px 18px;
-    font-weight: 600;
-    border-radius: 18px;
-    border-color: #122689;
-    cursor: pointer;
-    transition: all 0.3s ease-in;
-    text-align: center;
-  }
+//   .proof-btn{
+//     margin: auto;
+//     margin-bottom: 10px;
+//     display: block;
+//     font-weight: bold;
+//     color: #ffffff;
+//     background:#142a93;
+//     font-size: 19px;
+//     padding: 5px 18px;
+//     font-weight: 600;
+//     border-radius: 18px;
+//     border-color: #122689;
+//     cursor: pointer;
+//     transition: all 0.3s ease-in;
+//     text-align: center;
+//   }
 
-.proof-btn:hover {
-  background-color: #2e42b0;
-  color: white;
-  opacity: 1;
-  transform: translateY(0);
-  transition-duration: .35s;
-}
+// .proof-btn:hover {
+//   background-color: #2e42b0;
+//   color: white;
+//   opacity: 1;
+//   transform: translateY(0);
+//   transition-duration: .35s;
+// }
 
 .proof-btn:active, .back-btn:active {
   transform: translateY(2px);
   transition-duration: .35s;
 }
 
-  .back-btn {
+  .task-info-back-btn {
+    font-family: 'Poppins',sans-serif;
     margin-top: 15px;
     margin-bottom: 20px;
     font-weight: bold;
@@ -183,7 +183,7 @@
     margin-left: 15px;
   }
 
-  .back-btn:hover {
+  .task-info-back-btn:hover {
     background-color: #5e5e5e;
     color: white;
     opacity: 1;
@@ -192,11 +192,11 @@
   }
 
   
-    .box {
+    .task-box {
       height: 100%;
     }
     
-    .b-container {
+    .task-b-container {
       width: 100%;
       max-width: 1050px;
       max-height: 1900px;
@@ -213,16 +213,16 @@
   
     }
     
-    .b-container ul.b {
+    .task-b {
       margin-top: 25px;
       // margin: 2.5em 0;
       //display: inline-block;
     }
     
-    .b-container ul.b li {
+    .task-b-status {
       list-style: none;
       margin: auto;
-      margin-left: 170px;
+      margin-left: 150px;
       height: 100%;
       border-left: 1px dashed rgb(255, 255, 255);
       padding: 0 0 40px 20px;
@@ -230,12 +230,12 @@
       text-align: left;
     }
     
-    .b-container ul.b li:last-child {
+    .task-b-status:last-child {
       border-left: 0;
     }
   
     // point-icons
-    .b-container ul.b li::before {
+    .task-b-status::before {
       position: absolute;
       //margin-left: 1px;
       left: -18px;
@@ -249,25 +249,25 @@
       transition: all 500ms ease-in-out;
     }
     
-    .b-container ul.b li:hover::before {
+    .task-b-status:hover::before {
       border-color: #2d3239;
       background: #ffffff;
       transition: all 1000ms ease-in-out;
       cursor: pointer;
     }
     
-    .timestamp {
+    .task-timestamp {
       text-align: right;
       color:#ffffff;
       font-weight: bold;
       position: relative;
       width: 100%;
       font-size: 15px;
-      margin-left: -915px;
+      margin-left: -895px;
       cursor: pointer;
     }
 
-    .status-title {
+    .task-status-title {
       margin-top: -46px;
       margin-left: 15px;
       color: white;
@@ -275,7 +275,7 @@
       font-size: 18px;
     }
 
-    .status-title-dlvrd {
+    .task-status-title-dlvrd {
       margin-top: -46px;
       margin-left: 15px;
       color:#a2f995;
@@ -285,7 +285,7 @@
       letter-spacing: 0.5px;
     }
 
-    .status-info {
+    .task-status-info {
       margin-left: 15px;
       margin-right: 23px;
       color: rgb(205, 193, 193);
@@ -294,11 +294,14 @@
     }
 
     /* PROOF OF DELIVERY - PHOTOS */
-    .proof-area {
+    .task-proof-area {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
       width: 100%;
       height: 100%;
       max-width: 1050px;
-      max-height: 1900px;
+      max-height: 500px;
       //min-width: 350px;
       position: relative;
       border-radius: 12px;
@@ -309,64 +312,62 @@
       padding: 15px 45px 45px 45px;
       margin-left: auto;
       margin-right: auto;
-    }
-    .proof-title {
-      text-align: center;
-      margin-top: 10px;
-      font-weight: 600;
-      font-size: 20px;
-      word-spacing: 1px;
-    }
-    
-    .gallery {
-      box-sizing: border-box;
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-gap: 20px;
-    
-      max-width: 1000px;
-      margin: 0 auto;
-      overflow: hidden;
 
-      .gallery-proof {
-        width: 100%;
-        height: 150px; 
-        padding: 10px;
-      
-        border: 1px solid #ddd;
-        background: #fff;
-      
-        object-fit: contain;
-        position: relative;
+      .task-proof-title {
+        text-align: center;
+        margin-top: 10px;
+        font-weight: 600;
+        font-size: 20px;
+        word-spacing: 1px;
       }
 
-      .gallery-proof:hover {
-        z-index: 9;
-        transform: scale(1.1);
-        transition: transform ease-out 0.5s;
+      .task-gallery {
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+      
+        max-width: 1000px;
+        margin: 0 auto;
+        overflow: hidden;
+  
+        .task-gallery-proof {
+          width: 100%;
+          max-height: 150px; 
+          padding: 10px;
+        
+          border: 1px solid #ddd;
+          background: #fff;
+        
+          object-fit: contain;
+          position: relative;
+        }
+  
+        .task-gallery-proof:hover {
+          z-index: 9;
+          transform: scale(1.1);
+          transition: transform ease-out 0.5s;
+        }
       }
     }
 
-  @media (max-width: 1200px) {
-    .content{
+  @media (max-width: 1160px) {
+    .task-info-content{
       padding: 10px 0;
     }
-    .content form{
+    .task-info-form{
         width: 100%;
         //margin-left: 30px;
     }
-        
-    .body::before {
-        background: #FAE2D0;
-    }
-
-    .back-btn {
+      
+    .task-info-back-btn {
+      font-family: 'Poppins',sans-serif;
         display: block;
         margin-left: auto;
         margin-right: auto;
     }
 
-    .b-container ul.b li {
+    .task-b-status {
         margin: auto;
         margin-left: 40px;
         height: 100%;
@@ -376,25 +377,20 @@
         text-align: left;
     }
       
-    ul.b li .timestamp {
+    .task-timestamp {
         text-align: left;
         margin-left: 15px;
     }
 
-    .status-title, .status-title-dlvrd {
+    .task-status-title, .task-status-title-dlvrd {
         margin-top: 10px;
         margin-left: 15px;
     }
 }
 
 @media (max-width: 780px) {
-  .col {
-    float: none !important; 
-    width: 100%  !important; 
-    display: block  !important;
-    margin: auto !important;}
 
-  .container {
+  .task-info-container {
       height: 100% !important;
       width: 100% !important;
       margin: 0px !important;
@@ -402,16 +398,22 @@
       overflow: auto;
   }
 
-  .gallery {
-    grid-template-columns: repeat(2, 1fr);
+}
+@media (max-width: 850px) {
+.task-info-col {
+  float: none !important; 
+  width: 100%  !important; 
+  display: block  !important;
+  margin: auto !important;}
+
+  .task-gallery {
+    grid-template-columns: repeat(2, 2fr) !important;
   }
 }
 
-
-
 /* Mobile View */
 @media (max-width: 460px) {
-  .col {
+  .task-col-below-status {
     float: none !important; 
     width: 100%  !important; 
     display: block;
@@ -419,24 +421,26 @@
     // .other-details, .consignee-details {
     //   font-size: 70% !important;
     // }
-    .date, .time, td, .timestamp {
+    .task-info-date, .task-info-time, .task-info-td, .task-timestamp {
         font-size: 73% !important;}
 
-    .topic, .title, .status-title, .status-title-dlvrd, .status-info {
+    .task-info-topic, .task-info-title, 
+    .task-status-title, .task-status-title-dlvrd, 
+    .task-status-info {
         font-size: 95% !important;}
     
-    table {
-      .subinfo{
-        th, td {
+    .other-details, .consignee-details {
+      .task-info-subinfo{
+        .task-info-th, .task-info-td {
           font-size: 70% !important;
         } 
       }
   
     }
-    .back-btn, .proof-btn {
+    .task-info-back-btn {
         font-size: 85% !important;}
 
-    .container {
+    .task-info-container {
         height: 100% !important;
         width: 100% !important;
         margin: 0px !important;
@@ -444,9 +448,9 @@
         overflow: auto;
     }
 
-    .content {
+    .task-info-content {
         margin: 0px !important;}
 
-    .b-container ul.b li {
+    .task-b-status {
         padding: 0 0 30px 20px !important;}
 }
