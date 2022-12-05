@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+
+.task-b-title {
+    margin-top: 50px;
+    font-family: 'Poppins',sans-serif;
+    text-align: center;
+    font-weight: 600;
+    font-size: 25px;
+    word-spacing: 1px;
+}
+  
+.task-box {
+    height: 100%;}
+    
+.task-b-container {
+      overflow-y: scroll;
+      overflow-x: hidden;
+      width: 100%;
+      max-width: 1050px;
+      max-height: 750px;
+      height: 100%;
+      position: relative;
+      border-radius: 12px;
+      background: rgb(35, 32, 34);
+      margin: 0 20px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+      display: block;
+      padding-top: 15px;
+      margin-left: auto;
+      margin-right: auto;
+}
+    
+.task-b {
+    font-family: 'Poppins',sans-serif;
+    margin-top: 25px;
+}
+    
+.task-b-status {
+    list-style: none;
+    margin: auto;
+    margin-left: 150px;
+    height: 100%;
+    border-left: 1px dashed rgb(255, 255, 255);
+    padding: 0 0 40px 20px;
+    position: relative;
+    text-align: left;
+}
+    
+.task-b-status:last-child {
+    border-left: 0;
+}
+  
+// point-icons
+.task-b-status::before {
+    position: absolute;
+    left: -18px;
+    top: -5px;
+    content: " ";
+    border: 8px solid rgb(255, 255, 255);
+    border-radius: 500%;
+    background: #040498;
+    height: 20px;
+    width: 20px;
+    transition: all 500ms ease-in-out;
+}
+    
+.task-b-status:hover::before {
+    border-color: #2d3239;
+    background: #ffffff;
+    transition: all 1000ms ease-in-out;
+    cursor: pointer;
+}
+    
+.task-timestamp {
+    text-align: right;
+    color:#ffffff;
+    font-weight: bold;
+    position: relative;
+    width: 100%;
+    font-size: 15px;
+    margin-left: -875px;
+    cursor: pointer;
+}
+
+.task-status-title {
+    margin-top: -46px;
+    margin-left: 15px;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.task-status-title-dlvrd {
+    margin-top: -46px;
+    margin-left: 15px;
+    color:#a2f995;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.task-status-info {
+    margin-left: 15px;
+    margin-right: 23px;
+    color: rgb(205, 193, 193);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+@media (min-height: 1000px) {
+    .task-b-container {
+        max-height: 900px !important;
+    }
+}
+
+@media (min-height: 1150px) {
+    .task-b-container {
+        overflow: hidden !important;
+        max-height: 1100px !important;
+    }
+
+    .task-timestamp {
+        margin-left: -895px;
+        cursor: pointer;
+    }
+}
+
+
+@media (max-width: 1160px) {
+
+    .task-b-status {
+        margin: auto;
+        margin-left: 40px;
+        height: 100%;
+        border-left: 1px dashed rgb(255, 255, 255);
+        padding: 0 0 40px 20px;
+        position: relative;
+        text-align: left;
+    }
+      
+    .task-timestamp {
+        text-align: left;
+        margin-left: 15px;
+    }
+
+    .task-status-title, .task-status-title-dlvrd {
+        margin-top: 10px;
+        margin-left: 15px;
+    }
+}
+
+/* Mobile View */
+@media (max-width: 460px) {
+
+    .task-timestamp {
+        font-size: 73% !important;}
+
+    .task-status-title, .task-status-title-dlvrd, 
+    .task-status-info {
+        font-size: 95% !important;}
+
+    .task-b-status {
+        padding: 0 0 30px 20px !important;}
+}

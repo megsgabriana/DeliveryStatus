@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TaskInfoComponent } from './task-info/task-info.component';
 import { DriverInfoComponent } from './driver-info/driver-info.component';
+import { TrackStatusComponent } from './track-status/track-status.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TaskInfoComponent,
-    DriverInfoComponent
+    DriverInfoComponent,
+    TrackStatusComponent
   ],
   imports: [
     BrowserModule,
