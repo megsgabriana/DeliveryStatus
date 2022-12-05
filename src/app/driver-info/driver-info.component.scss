@@ -1,22 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
 @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 
-*{
+
+  .driver-info-body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins',sans-serif;
-  }
-  body{
     height: 100vh;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #FAE2D0;
+    background: #ffffff;
     position: relative;
   }
-  body::before{
+  .driver-info-body::before {
     content: '';
     position: absolute;
     height: 100%;
@@ -26,7 +25,7 @@
     background: #f9f9ff;
   }
   
-  .container{
+  .driver-info-container {
     z-index: 12;
     max-width: 1050px;
     max-height: 100%;
@@ -39,44 +38,44 @@
     overflow: auto;
   }
   
-  .container .content{
+  .driver-info-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 25px 20px;
   }
-  .content {
-    img {
+  .driver-info-content {
+    .driver-info-icon {
         margin-top: 10px;
         display: block;
         margin-left: auto;
         margin-right: auto;
         width: 75px;
     }
-    form {
+    .driver-info-form {
         width: 100%;
         //margin-right: 30px;
     }
     
-    .topic{
+    .driver-info-topic {
         margin-top: 10px;
         text-align: center;
         font-size: 25px;
         font-weight: bold;
     }
 
-    .date, .time {
+    .driver-info-date, .driver-info-time {
         color: gray;
         margin-top: 5px;
         text-align: center;
         font-size: 13px;
     }
 
-    .time {
+    .driver-info-time {
         margin-bottom: 10px;
     }
     
-    .title {
+    .driver-info-title {
         text-align: center;
         margin-top: 10px;
         font-weight: 600;
@@ -84,14 +83,14 @@
         word-spacing: 1px;
     }
 
-    // Other Details - Consignee Details
-    .col {
-        float: left; width: 50%;}
+    // // Other Details - Consignee Details
+    // .col {
+    //     float: left; width: 50%;}
 
-    .row:after {
-        content: ""; display: table; clear: both;}
+    // .row .driver-info-main:after {
+    //     content: ""; display: table; clear: both;}
 
-    table {
+    .driver-info-table {
         margin-top: 5x;
         margin-left: auto;
         margin-right: auto;
@@ -113,12 +112,13 @@
             //display: inline-block;
          }
     }
+
     hr {
         border-top: 2px solid #10227A; 
         margin: 10px;
     }
 
-    .col-below {
+    .col-below-status {
         margin-top: 20px;
         text-align: center;
         .current-status {
@@ -133,6 +133,7 @@
   /* BUTTONS */
   
   .upload-btn, .update-btn {
+    font-family: 'Poppins',sans-serif;
     margin: auto;
     display: block;
     font-weight: bold;
@@ -166,6 +167,7 @@
 }
 
 .logout-btn {
+    font-family: 'Poppins',sans-serif;
     margin-top: 15px;
     margin-bottom: 20px;
     font-weight: bold;
@@ -285,20 +287,74 @@
     font-size: 16px;
   }
 
+    /* PROOF OF DELIVERY - PHOTOS */
+    .proof-area {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      width: 100%;
+      height: 100%;
+      max-width: 465px;
+      max-height: 500px;
+      //min-width: 350px;
+      position: relative;
+      border-radius: 12px;
+      background: rgb(255, 255, 255);
+      margin: 0 20px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+      display: block;
+      padding: 15px 45px 45px 45px;
+      margin-left: auto;
+      margin-right: auto;
+
+      .proof-title {
+        text-align: center;
+        margin-top: 10px;
+        font-weight: 600;
+        font-size: 20px;
+        word-spacing: 1px;
+      }
+
+      .gallery {
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        grid-gap: 20px;
+      
+        max-width: 1000px;
+        margin: 0 auto;
+        overflow: hidden;
+  
+        .gallery-proof {
+          width: 100%;
+          max-height: 150px; 
+          padding: 10px;
+        
+          border: 1px solid #ddd;
+          background: #fff;
+        
+          object-fit: contain;
+          position: relative;
+        }
+  
+        .gallery-proof:hover {
+          z-index: 9;
+          transform: scale(1.1);
+          transition: transform ease-out 0.5s;
+        }
+      }
+    }
+
 @media (max-width:1000px) {
-    .content{
+    .driver-info-content {
         padding: 10px 0;
     }
 }
 
 @media (max-width: 800px) {
-    .content form{
+    .driver-info-form {
         width: 100%;
         //margin-left: 30px;
-    }
-        
-    .body::before {
-        background: #FAE2D0;
     }
 
     .logout-btn {
@@ -333,13 +389,8 @@
 }
 
 @media (max-width: 780px) {
-    .col {
-      float: none !important; 
-      width: 100%  !important; 
-      display: block  !important;
-      margin: auto !important;}
   
-    .container {
+    .driver-info-container {
         height: 100% !important;
         width: 100% !important;
         margin: 0px !important;
@@ -350,13 +401,13 @@
 
 /* Mobile View */
 @media (max-width: 450px) {
-    .date, .time, .timestamp {
+    .driver-info-date, .driver-info-time, .driver-info-timestamp {
         font-size: 73% !important;}
 
     .upload-btn, .update-btn {
         font-size: 80% !important;}
 
-    table {
+    .driver-info-table {
         width: 90% !important;
 
         th, td {
@@ -368,7 +419,7 @@
         }
     }
 
-    .topic, .title, .status-title {
+    .driver-topic, .driver-info-title, .status-title {
         font-size: 95% !important;}
 
     .proof-btn {
@@ -377,7 +428,7 @@
     .logout-btn {
         font-size: 80% !important;}
 
-    .container {
+    .driver-info-container {
         height: 100% !important;
         width: 100% !important;
         margin: 0px !important;
@@ -385,7 +436,7 @@
         overflow: auto;
     }
 
-    .content {
+    .driver-info-content {
         margin: 0px !important;}
 
     .b-container ul.b li {

@@ -2,18 +2,17 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 
-<body>
-    <div class="container">
-      <div class="content">
-      <form action="#">
-        <img src="assets/delivery-icon.png" alt="">
-        <div class="topic">Delivery Details</div>
-        <div class="date">As of November 20, 2022</div>
-        <div class="time">8:00 AM</div>
-        <hr>
-        <br>
-        <div class="row">
-            <table>
+<section class="driver-info-body">
+    <div class="driver-info-container">
+      <div class="driver-info-content">
+      <form action="#" class="driver-info-form">
+        <img src="assets/delivery-icon.png" alt="" class="driver-info-icon">
+        <div class="driver-info-topic">Delivery Details</div>
+        <div class="driver-info-date">As of November 20, 2022</div>
+        <div class="driver-info-time">8:00 AM</div>
+        <hr><br>
+        <div class="row driver-info-main">
+            <table class="driver-info-table">
                 <tr>
                   <th>TRUCK PLATE #: </th>
                   <td>SADAASDDW</td>
@@ -64,9 +63,9 @@
             <br>
             <hr>
         </div>
-          <div class="row">
-            <div class="col-below status">
-                <div class="title">Track Status</div><br>
+          <div class="row driver-info-status">
+            <div class="col-below-status">
+                <div class="driver-info-title">Track Status</div><br>
                 <div class="box">
                     <div class="b-container">
                       <ul class="b">
@@ -127,12 +126,20 @@
                       </ul>
                       <button class="update-btn">Update Status</button><br>
                     </div>
+                  </div><br>
+                  <div class="proof-area">
+                    <div class="proof-title">Proof of Delivery</div><br>
+                    <div class="gallery">
+                      <img class="gallery-proof" src="assets/deliveryproof/imgproof-1.jpg">
+                      <img class="gallery-proof" src="assets/deliveryproof/imgproof-2.jfif">
+                      <img class="gallery-proof" src="assets/deliveryproof/imgproof-3.jfif">
+                      <img class="gallery-proof" src="assets/deliveryproof/imgproof-4.jpg">
+                    </div>
                   </div>
-                  <div></div>
                 </div>
           </div><br>
           <button class="logout-btn">Logout</button>
         </form>
     </div>
   </div>
-</body>
+</section>
